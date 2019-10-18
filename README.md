@@ -9,20 +9,64 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
-CocoaToggles is available through [CocoaPods](https://cocoapods.org). To install
+CocoaToggles is available through [CocoaPods](https://cocoapods.org). To install 
 it, simply add the following line to your Podfile:
 
+
 ```ruby
+
 pod 'CocoaToggles'
+
 ```
+
+## Usage
+
+### Create Toggle Configuration
+To be able to use this framework you'll have to set up the configuration of your app following the steps in our [Dashboard]([https://toggle-manager.herokuapp.com](https://toggle-manager.herokuapp.com/))
+
+Inside each app you will find a configuration to set up your framework from inside your app, such as described in the image bellow: 
+
+![](app-configuration.png)
+
+### Using the framework itself 
+
+First, set up the configuration of your app's toggles in your ViewController.
+```kotlin 
+override func viewDidLoad() {
+    super.viewDidLoad()
+    let appConfiguration = CTConfiguration("ilEpbJwuwvbuZTkwbRhslWpdoOr2","KCQNY2baVZ630AbKlTbq")
+    let toggleManager = CTToggleManager(configuration: configuration)
+    toggleManager.delegate = self
+    toggleManager.config()
+}
+```  
+
+Then, make the ViewController implement the CTTogglesDelegate protocol.
+
+```kotlin
+extension ViewController : CTTogglesDelegate {
+    func getTogglesFrom(repository: CTRepository) {
+        print(repository)
+    }
+}
+```
+The repository contains a set of the toggles defined in the dashboard. You can access by using the `isToggleOn` function as described bellow.
+
+```kotlin
+extension ViewController : CTTogglesDelegate {
+    func getTogglesFrom(repository: CTRepository) {
+        print(repository.isToggleOn(name: "uber-x"))
+    }
+}
+```
+
 
 ## Author
 
 isabellyfd, icfd@cin.ufpe.br
+
 
 ## License
 

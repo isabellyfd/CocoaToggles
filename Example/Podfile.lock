@@ -1,0 +1,16 @@
+PODS:
+  - CocoaToggles (0.1.0)
+
+DEPENDENCIES:
+  - CocoaToggles (from `../`)
+
+EXTERNAL SOURCES:
+  CocoaToggles:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaToggles: c116d6224d6b74422f7e28f578e6cd63f7ae6200
+
+PODFILE CHECKSUM: 0c37000511e84ab323a23a5133bdc0a4fb9435d7
+
+COCOAPODS: 1.8.0.beta.2

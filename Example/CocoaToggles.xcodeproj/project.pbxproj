@@ -15,6 +15,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AA266631CD06484D9AA8D8C2 /* Pods_CocoaToggles_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7713B15B89575A03D4422B5F /* Pods_CocoaToggles_Example.framework */; };
 		C1A2FE51B0B4F9B48E5C1496 /* Pods_CocoaToggles_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C613644DC054720EB6C4A66C /* Pods_CocoaToggles_Tests.framework */; };
+		EA556153235A45810086967C /* app-configuration.png in Resources */ = {isa = PBXBuildFile; fileRef = EA556152235A45810086967C /* app-configuration.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1937A2008B926507797DA889 /* CocoaToggles.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CocoaToggles.podspec; path = ../CocoaToggles.podspec; sourceTree = "<group>"; };
+		1937A2008B926507797DA889 /* CocoaToggles.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CocoaToggles.podspec; path = ../CocoaToggles.podspec; sourceTree = "<group>"; };
 		19764C019C69CD1B572125A3 /* Pods-CocoaToggles_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaToggles_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CocoaToggles_Tests/Pods-CocoaToggles_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1D3898C1B0EAE601EFD83C5A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1D3898C1B0EAE601EFD83C5A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		290A1FA54B06725415DA0D39 /* Pods-CocoaToggles_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaToggles_Tests.release.xcconfig"; path = "Target Support Files/Pods-CocoaToggles_Tests/Pods-CocoaToggles_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CocoaToggles_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaToggles_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,9 +45,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7713B15B89575A03D4422B5F /* Pods_CocoaToggles_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaToggles_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43ECED0026756BBD0891B4D /* Pods-CocoaToggles_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaToggles_Example.release.xcconfig"; path = "Target Support Files/Pods-CocoaToggles_Example/Pods-CocoaToggles_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A4A0374786A0EFE412F33455 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A4A0374786A0EFE412F33455 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B2A57BA453CF21EB31448CE0 /* Pods-CocoaToggles_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaToggles_Example.debug.xcconfig"; path = "Target Support Files/Pods-CocoaToggles_Example/Pods-CocoaToggles_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C613644DC054720EB6C4A66C /* Pods_CocoaToggles_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaToggles_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA556152235A45810086967C /* app-configuration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-configuration.png"; path = "../app-configuration.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,6 @@
 				19764C019C69CD1B572125A3 /* Pods-CocoaToggles_Tests.debug.xcconfig */,
 				290A1FA54B06725415DA0D39 /* Pods-CocoaToggles_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,6 +145,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				EA556152235A45810086967C /* app-configuration.png */,
 				1937A2008B926507797DA889 /* CocoaToggles.podspec */,
 				A4A0374786A0EFE412F33455 /* README.md */,
 				1D3898C1B0EAE601EFD83C5A /* LICENSE */,
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -248,6 +251,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				EA556153235A45810086967C /* app-configuration.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
