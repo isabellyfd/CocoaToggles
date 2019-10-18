@@ -11,8 +11,15 @@ import CocoaToggles
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var uberXButton: UIButton!
+    @IBOutlet weak var uberSelectButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        uberXButton.isHidden = true
+        uberSelectButton.isHidden = true
+        
         let configuration = CTConfiguration("ilEpbJwuwvbuZTkwbRhslWpdoOr2","KCQNY2baVZ630AbKlTbq")
         
         let toggleManager = CTToggleManager(configuration: configuration)
@@ -31,7 +38,14 @@ class ViewController: UIViewController {
 extension ViewController : CTTogglesDelegate {
     
     func getTogglesFrom(repository: CTRepository) {
-        print(repository)
+        guard let isUberSelectOn = repository.isToggleOn(name: "uber-select") else { return }
+        
+        if isUberSelectOn {
+            self.uberXButton.isHidden = false
+            self.uberSelectButton.isHidden = false
+        } else {
+            self.uberXButton.isHidden = true
+        }
     }
 }
 
