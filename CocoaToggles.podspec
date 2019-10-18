@@ -9,7 +9,8 @@
 Pod::Spec.new do |s|
   s.name             = 'CocoaToggles'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CocoaToggles.'
+  s.summary          = 'A Swift based framework to use feature toggles (a.k.a feature flags).'
+  s.swift_versions   = '4.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This a native framework written in Swift that aims enable developers to use feature toggle while using Continuous Integration and Continuous Delivery throughout the software delivery roadmap.
                        DESC
 
   s.homepage         = 'https://github.com/isabellyfd/CocoaToggles'
