@@ -22,7 +22,7 @@ pod 'CocoaToggles'
 
 ## Author
 
-isabellyfd, idamasce@thoughtworks.com
+isabellyfd, icfd@cin.ufpe.br
 
 ## License
 

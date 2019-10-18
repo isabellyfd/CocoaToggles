@@ -25,7 +25,7 @@ This a native framework written in Swift that aims enable developers to use feat
   s.homepage         = 'https://github.com/isabellyfd/CocoaToggles'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'isabellyfd' => 'idamasce@thoughtworks.com' }
+  s.author           = { 'isabellyfd' => 'icfd@cin.ufpe.br' }
   s.source           = { :git => 'https://github.com/isabellyfd/CocoaToggles.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
