@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import CocoaToggles
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let configuration = CTConfiguration("ilEpbJwuwvbuZTkwbRhslWpdoOr2","KCQNY2baVZ630AbKlTbq")
+        
+        let toggleManager = CTToggleManager(configuration: configuration)
+        toggleManager.delegate = self
+        toggleManager.config()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,5 +26,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+extension ViewController : CTTogglesDelegate {
+    
+    func getTogglesFrom(repository: CTRepository) {
+        print(repository)
+    }
 }
 
