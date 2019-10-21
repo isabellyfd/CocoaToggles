@@ -41,10 +41,14 @@ extension ViewController : CTTogglesDelegate {
         guard let isUberSelectOn = repository.isToggleOn(name: "uber-select") else { return }
         
         if isUberSelectOn {
-            self.uberXButton.isHidden = false
-            self.uberSelectButton.isHidden = false
+            DispatchQueue.main.async {
+                self.uberXButton.isHidden = false
+                self.uberSelectButton.isHidden = false
+            }
         } else {
-            self.uberXButton.isHidden = true
+            DispatchQueue.main.async {
+                self.uberXButton.isHidden = false
+            }
         }
     }
 }
