@@ -16,6 +16,11 @@
 		AA266631CD06484D9AA8D8C2 /* Pods_CocoaToggles_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7713B15B89575A03D4422B5F /* Pods_CocoaToggles_Example.framework */; };
 		C1A2FE51B0B4F9B48E5C1496 /* Pods_CocoaToggles_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C613644DC054720EB6C4A66C /* Pods_CocoaToggles_Tests.framework */; };
 		EA556153235A45810086967C /* app-configuration.png in Resources */ = {isa = PBXBuildFile; fileRef = EA556152235A45810086967C /* app-configuration.png */; };
+		EA556158235E15750086967C /* app-view.png in Resources */ = {isa = PBXBuildFile; fileRef = EA556154235E15740086967C /* app-view.png */; };
+		EA556159235E15750086967C /* app-created.png in Resources */ = {isa = PBXBuildFile; fileRef = EA556155235E15750086967C /* app-created.png */; };
+		EA55615A235E15750086967C /* app-creation.png in Resources */ = {isa = PBXBuildFile; fileRef = EA556156235E15750086967C /* app-creation.png */; };
+		EA55615B235E15750086967C /* sign-in.png in Resources */ = {isa = PBXBuildFile; fileRef = EA556157235E15750086967C /* sign-in.png */; };
+		EA55615D235E16470086967C /* toggle-form.png in Resources */ = {isa = PBXBuildFile; fileRef = EA55615C235E16470086967C /* toggle-form.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		B2A57BA453CF21EB31448CE0 /* Pods-CocoaToggles_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaToggles_Example.debug.xcconfig"; path = "Target Support Files/Pods-CocoaToggles_Example/Pods-CocoaToggles_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C613644DC054720EB6C4A66C /* Pods_CocoaToggles_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaToggles_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA556152235A45810086967C /* app-configuration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-configuration.png"; path = "../app-configuration.png"; sourceTree = "<group>"; };
+		EA556154235E15740086967C /* app-view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-view.png"; path = "../app-view.png"; sourceTree = "<group>"; };
+		EA556155235E15750086967C /* app-created.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-created.png"; path = "../app-created.png"; sourceTree = "<group>"; };
+		EA556156235E15750086967C /* app-creation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-creation.png"; path = "../app-creation.png"; sourceTree = "<group>"; };
+		EA556157235E15750086967C /* sign-in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sign-in.png"; path = "../sign-in.png"; sourceTree = "<group>"; };
+		EA55615C235E16470086967C /* toggle-form.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "toggle-form.png"; path = "../toggle-form.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +155,11 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				EA55615C235E16470086967C /* toggle-form.png */,
+				EA556155235E15750086967C /* app-created.png */,
+				EA556156235E15750086967C /* app-creation.png */,
+				EA556154235E15740086967C /* app-view.png */,
+				EA556157235E15750086967C /* sign-in.png */,
 				EA556152235A45810086967C /* app-configuration.png */,
 				1937A2008B926507797DA889 /* CocoaToggles.podspec */,
 				A4A0374786A0EFE412F33455 /* README.md */,
@@ -249,10 +264,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA55615A235E15750086967C /* app-creation.png in Resources */,
+				EA556158235E15750086967C /* app-view.png in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				EA55615B235E15750086967C /* sign-in.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				EA556153235A45810086967C /* app-configuration.png in Resources */,
+				EA556159235E15750086967C /* app-created.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				EA55615D235E16470086967C /* toggle-form.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

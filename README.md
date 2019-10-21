@@ -23,8 +23,26 @@ pod 'CocoaToggles'
 
 ## Usage
 
-### Create Toggle Configuration
-To be able to use this framework you'll have to set up the configuration of your app following the steps in our [Dashboard]([https://toggle-manager.herokuapp.com](https://toggle-manager.herokuapp.com/))
+### Creating Toggle Configuration
+Go to [Toggle Manager Dashboard](https://toggle-manager.herokuapp.com/) and Sign in with yor prefered email. 
+
+![](sign-in.png)
+
+Create an application by clicking the button `New application`.
+
+![](app-creation.png)
+
+![](app-created.png)
+You should see your application created.
+
+
+![](app-view.png)
+
+By clicking in your application you'll be able to see the toggle's configuration page of your app. You can add toggles by clicking `New toggle`
+
+![](toggle-form.png)
+
+You can change your application toggles by switching on and off your toggles. 
 
 Inside each app you will find a configuration to set up your framework from inside your app, such as described in the image bellow: 
 
