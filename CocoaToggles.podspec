@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CocoaToggles'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A Swift based framework to use feature toggles (a.k.a feature flags).'
   s.swift_versions   = '4.0'
 
