@@ -31,7 +31,7 @@ This a native framework written in Swift that aims enable developers to use feat
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CocoaToggles/*.swift'
+  s.source_files = 'CocoaToggles/Classes/**/*'
   
   # s.resource_bundles = {
   #   'CocoaToggles' => ['CocoaToggles/Assets/*.png']
