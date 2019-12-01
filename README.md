@@ -51,7 +51,7 @@ Inside each app you will find a configuration to set up your framework from insi
 ### Using the framework itself 
 
 First, set up the configuration of your app's toggles in your ViewController.
-```kotlin 
+```swift 
 override func viewDidLoad() {
     super.viewDidLoad()
     let appConfiguration = CTConfiguration("ilEpbJwuwvbuZTkwbRhslWpdoOr2","KCQNY2baVZ630AbKlTbq")
@@ -63,7 +63,7 @@ override func viewDidLoad() {
 
 Then, make the ViewController implement the CTTogglesDelegate protocol.
 
-```kotlin
+```swift
 extension ViewController : CTTogglesDelegate {
     func getTogglesFrom(repository: CTRepository) {
         print(repository)
@@ -72,7 +72,7 @@ extension ViewController : CTTogglesDelegate {
 ```
 The repository contains a set of the toggles defined in the dashboard. You can access by using the `isToggleOn` function as described bellow.
 
-```kotlin
+```swift
 extension ViewController : CTTogglesDelegate {
     func getTogglesFrom(repository: CTRepository) {
         print(repository.isToggleOn(name: "uber-x"))
