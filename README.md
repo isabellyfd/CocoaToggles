@@ -52,12 +52,16 @@ Inside each app you will find a configuration to set up your framework from insi
 
 First, set up the configuration of your app's toggles in your ViewController.
 ```swift 
-override func viewDidLoad() {
-    super.viewDidLoad()
-    let appConfiguration = CTConfiguration("ilEpbJwuwvbuZTkwbRhslWpdoOr2","KCQNY2baVZ630AbKlTbq")
-    let toggleManager = CTToggleManager(configuration: configuration)
-    toggleManager.delegate = self
-    toggleManager.config()
+import CocoaToggles
+
+class ViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let appConfiguration = CTConfiguration("ilEpbJwuwvbuZTkwbRhslWpdoOr2","KCQNY2baVZ630AbKlTbq")
+        let toggleManager = CTToggleManager(configuration: configuration)
+        toggleManager.delegate = self
+        toggleManager.config()
+    }
 }
 ```  
 
