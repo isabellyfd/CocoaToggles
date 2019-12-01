@@ -75,7 +75,7 @@ The repository contains a set of the toggles defined in the dashboard. You can a
 ```kotlin
 extension ViewController : CTTogglesDelegate {
     func getTogglesFrom(repository: CTRepository) {
-        print(repository.isToggleOn(name: "uber-x"))
+        print(repository.isToggleOn(name: "uber-x"))
     }
 }
 ```
