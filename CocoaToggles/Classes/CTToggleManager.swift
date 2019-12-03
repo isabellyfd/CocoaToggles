@@ -25,17 +25,21 @@ open class CTToggleManager {
         service.getAllApplications(for: configuration.userId, callback: {
             (applications) in
 
-            if let applications = applications {
-                let applicationFilter = applications.filter { $0.id == self.configuration.applicationId }
-                
-                if applicationFilter.count > 0 {
-                    self.logger.info(value: "User \(self.configuration.userId) can access application id = \(self.configuration.applicationId)")
-                    self.service.getAllToggles(for: self.configuration.applicationId, callback: { (toggles) in
-                        self.delegate?.getTogglesFrom(repository: CTRepository(toggles: toggles))
-                    })
-                }
+            guard let applications = applications else {
+                self.delegate?.getTogglesFrom(repository: CTRepository(toggles: nil))
+                return
             }
-            self.delegate?.getTogglesFrom(repository: CTRepository(toggles: nil))
+
+            let applicationFilter = applications.filter { $0.id == self.configuration.applicationId }
+            
+            if applicationFilter.count > 0 {
+                self.logger.info(value: "User \(self.configuration.userId) can access application id = \(self.configuration.applicationId)")
+                self.service.getAllToggles(for: self.configuration.applicationId, callback: { (toggles) in
+                    self.delegate?.getTogglesFrom(repository: CTRepository(toggles: toggles))
+                })
+            } else {
+                self.delegate?.getTogglesFrom(repository: CTRepository(toggles: nil))
+            }
         })
     }
 }
